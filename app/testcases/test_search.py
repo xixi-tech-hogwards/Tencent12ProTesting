@@ -27,7 +27,7 @@ class TestXueQiu:
         caps['skipServerInstallation'] = True
         caps['skipDeviceInitialization'] = True
 
-        self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
+        self.driver = webdriver.Remote("http://localhost:4724/wd/hub", caps)
         self.driver.implicitly_wait(10)
 
     def teardown_class(self):
@@ -64,3 +64,4 @@ class TestXueQiu:
                                      f"//*[@text='{searchresult}']/../..//*[@text='已添加']")
         else:
             print("已加自选")
+
